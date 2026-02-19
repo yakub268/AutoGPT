@@ -166,7 +166,7 @@ const ScrollableLegend: React.FC<
       style={{ scrollbarWidth: "none" }}
     >
       {payload?.map((entry) => {
-        if (entry.type == "none") return;
+        if (entry.type == "none") return null;
         return (
           <span key={String(entry.value)} className="inline-flex items-center">
             <span
